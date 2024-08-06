@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addis Living</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span>Phone: (123) 456-7890</span>
+                <span>Email: contact@addiliving.com</span>
+            </div>
+            <div class="flex space-x-4">
+                <select class="bg-gray-800 text-white border border-gray-700 rounded px-2 py-1">
+                    <option value="en">English</option>
+                    <option value="es">Amharic</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-8 py-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-red-500">Addis Living</h1>
+            <nav class="flex items-center space-x-6 flex-grow justify-center">
+                <ul class="flex space-x-14">
+                    <li><a href="#" class="text-black hover:text-gray-700 flex items-center"><i
+                                class="fas fa-home mr-2"></i> Home</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-700 flex items-center"><i
+                                class="fas fa-image mr-2"></i> Gallery</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-700 flex items-center"><i
+                                class="fas fa-box-open mr-2"></i> Products</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-700 flex items-center"><i
+                                class="fas fa-blog mr-2"></i> Blog</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-700 flex items-center"><i
+                                class="fas fa-envelope mr-2"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="relative">
+                <button class="focus:outline-none mr-8">
+                    <i class="fas fa-search text-gray-700 hover:text-gray-900"></i>
+                </button>
+            </div>
+            <a href="#" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Login</a>
+        </div>
+    </header>
+    <div class="relative w-full flex justify-start h-screen overflow-y-auto">
+        <img src="2.jpg" alt="Garado Image" class="w-1/2 h-auto ml-12">
+        <div class="absolute top-1/2 right-12 transform -translate-y-1/2 bg-white p-12 rounded-lg shadow-lg max-w-2xl -mr-12"
+            id="promoContainer">
+            <h2 class="text-4xl font-bold mb-2">Welcome to Addis Living</h2>
+            <p class="text-lg text-gray-700 mb-4">Your journey to excellence begins here.</p>
+            <h3 class="text-red-600 text-3xl font-bold mb-2">UP TO 30% OFF</h3>
+            <h4 class="text-gray-800 text-2xl font-semibold mb-4">Wood & Leather Sofa Collections</h4>
+            <p class="text-gray-600 text-lg mb-4">Explore our exclusive collection of handcrafted wood and leather sofas
+                that combine luxury with comfort.</p>
+            <a href="#" class="bg-red-600 text-white text-lg px-6 py-3 rounded hover:bg-red-700">Get Collection</a>
+        </div>
+    </div>
+    <section class="container mx-auto px-4 py-16 bg-white">
+        <h2 class="text-3xl font-bold text-center mb-4">Featured Categories</h2>
+        <p class="text-lg text-gray-700 text-center mb-8">Visit our shop to see amazing creations from our designers</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <button class="bg-white rounded-lg shadow-lg p-4 text-center hover:bg-gray-100 transition">
+                <i class="fas fa-bed text-red-600 text-3xl mb-2"></i>
+                <h3 class="text-lg font-semibold">Bedroom</h3>
+                <p class="text-gray-600">9 items</p>
+            </button>
+            <button class="bg-white rounded-lg shadow-lg p-4 text-center hover:bg-gray-100 transition">
+                <i class="fas fa-briefcase text-red-600 text-3xl mb-2"></i>
+                <h3 class="text-lg font-semibold">Business Solutions</h3>
+                <p class="text-gray-600">1 item</p>
+            </button>
+            <button class="bg-white rounded-lg shadow-lg p-4 text-center hover:bg-gray-100 transition">
+                <i class="fas fa-laptop-house text-red-600 text-3xl mb-2"></i>
+                <h3 class="text-lg font-semibold">Home Office</h3>
+                <p class="text-gray-600">14 items</p>
+            </button>
+            <button class="bg-white rounded-lg shadow-lg p-4 text-center hover:bg-gray-100 transition">
+                <i class="fas fa-lightbulb text-red-600 text-3xl mb-2"></i>
+                <h3 class="text-lg font-semibold">Lighting</h3>
+                <p class="text-gray-600">6 items</p>
+            </button>
+            <button class="bg-white rounded-lg shadow-lg p-4 text-center hover:bg-gray-100 transition">
+                <i class="fas fa-couch text-red-600 text-3xl mb-2"></i>
+                <h3 class="text-lg font-semibold">Home Decorations</h3>
+                <p class="text-gray-600">19 items</p>
+            </button>
+        </div>
+    </section>
+    <section class="container mx-auto px-4 py-16 bg-gray-100 flex items-center ml-16">
+        <div class="w-1/2 pr-8">
+            <h2 class="text-red-600 text-2xl font-bold mb-4">Massey Collection 2022</h2>
+            <p class="text-4xl text-gray-700 font-bold mb-4">Autumn Deal, discounts up to 20% are waiting for you</p>
+            <p class="text-gray-600 mb-4">
+                Praesent faucibus, lorem ut sollicitudin dapibus, quam ligula pretium magna, eu congue ex quam ut neque.
+            </p>
+            <p class="text-gray-600 mb-6">
+                Open created shall two he second moving whose. He face whose two upon, fowl behold waters. Fly there
+                their day creepeth. Darkness beginning spirit after. Creepeth subdue. Brought may, first. Under living
+                that. Third. For morning whales saw were had seed can’t divide it light shall moveth, us blessed given
+                wherein.
+            </p>
+            <a href="#" class="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700">Learn More</a>
+        </div>
+        <div class="relative w-1/2 flex">
+            <img src="12.jpg" alt="Image 1" class="w-2/5 h-auto rounded-lg shadow-lg ml-6">
+            <img src="23.jpg" alt="Image 2" class="absolute right-0 bottom-0 w-2/5 h-auto rounded-lg shadow-lg mr-16">
+        </div>
+    </section>
+    <section class="container mx-auto px-4 py-16 bg-white">
+        <h2 class="text-3xl font-bold text-center mb-4">Our Partners</h2>
+        <p class="text-lg text-gray-700 text-center mb-8">We proudly work with these amazing companies</p>
+        <div class="overflow-hidden relative">
+            <div class="flex animate-scroll whitespace-nowrap">
+                <img src="iftt.png" alt="IFTTT" class="h-16 mx-8">
+                <img src="google.png" alt="Google" class="h-16 mx-8">
+                <img src="payy.png" alt="PayPal" class="h-12 mx-8">
+                <img src="catt.png" alt="Airbnb" class="h-11 mx-8">
+                <img src="amaa.png" alt="Amazon" class="h-16 mx-8">
+                <!-- Repeat the logos to create a seamless effect -->
+                <img src="iftt.png" alt="IFTTT" class="h-16 mx-8">
+                <img src="google.png" alt="Google" class="h-16 mx-8">
+                <img src="payy.png" alt="PayPal" class="h-12 mx-8">
+                <img src="catt.png" alt="Airbnb" class="h-11 mx-8">
+                <img src="amaa.png" alt="Amazon" class="h-16 mx-8">
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Animation for continuous scrolling */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-scroll {
+            animation: scroll 15s linear infinite;
+            /* Duration*/
+        }
+    </style>
+    <section class="container mx-auto px-4 py-16 bg-white">
+        <h2 class="text-3xl font-bold text-center mb-4">Best Selling Products</h2>
+        <p class="text-lg text-gray-700 text-center mb-8">Visit our shop to see amazing creations from our designers</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg p-4 text-center">
+                <img src="sofa3.png" alt="Delphine Cane Velvet Accent Chair"
+                    class="w-full h-48 object-cover rounded mb-2">
+                <h3 class="text-lg font-semibold">Delphine Cane Velvet Accent Sofa</h3>
+                <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, delicata liberavisse id cum, no quo maiorum
+                    intellegebat, liber regione eu sit.</p>
+                <span class="block text-xl font-bold text-gray-800 mb-2">$343 <span
+                        class="text-gray-500 line-through">$2323</span></span>
+                <a href="#" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">View Details</a>
+                <!-- Changed to red -->
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 text-center">
+                <img src="sofa3.png" alt="Sophie Modern Dining Chair" class="w-full h-48 object-cover rounded mb-2">
+                <h3 class="text-lg font-semibold">Sophie Modern Dining Sofa</h3>
+                <p class="text-gray-600 mb-4">Curabitur sit amet massa vitae tortor suscipit bibendum a ac lorem.</p>
+                <span class="block text-xl font-bold text-gray-800 mb-2">$199 <span
+                        class="text-gray-500 line-through">$399</span></span>
+                <a href="#" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">View Details</a>
+                <!-- Changed to red -->
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 text-center">
+                <img src="sofa3.png" alt="Luna Swivel Accent Chair" class="w-full h-48 object-cover rounded mb-2">
+                <h3 class="text-lg font-semibold">Luna Swivel Accent Sofa</h3>
+                <p class="text-gray-600 mb-4">Sed interdum erat in mauris vehicula, vitae tristique erat auctor.</p>
+                <span class="block text-xl font-bold text-gray-800 mb-2">$299 <span
+                        class="text-gray-500 line-through">$499</span></span>
+                <a href="#" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">View Details</a>
+                <!-- Changed to red -->
+            </div>
+        </div>
+    </section>
+    <div class="relative w-full h-screen overflow-hidden">
+        <img src="lastt.jpg" alt="Background Image" class="w-full h-full object-cover filter blur-md">
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-red-500">Explore The Living Room Store</h1>
+            <p class="text-xl md:text-2xl mb-6">Curate a picture perfect Living Room</p>
+            <p class="max-w-lg mb-8 font-bold">A Living room isn't only a place where we spend the most time, but it
+                also sets the mood for the rest of the home. Make a great first impression with a living room that
+                reflects your aesthetics and personality.</p>
+            <a href="#learn-more" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Learn
+                More</a>
+        </div>
+    </div>
+    <section class="container mx-auto px-4 py-16 bg-white">
+        <h2 class="text-red-600 text-xl font-semibold text-center mb-4">Team Members</h2>
+        <p class="text-black font-bold text-2xl text-center mb-8">Top Designers With Addis Living</p>
+        <p class="text-gray-600 text-center mb-8">Aliquam vel maximus nulla. Etiam viverra nulla ac tellus auctor
+            tempus. Donec euismod commodo mi, ac auctor tortor aliquam in diam porta hendrerit in id orci.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg p-4 text-center">
+                <img src="t1.jpg" alt="Team Member 1" class="w-1/2 h-48 object-cover rounded mb-2 mx-auto">
+                <h3 class="text-lg font-semibold">Alice Smith</h3>
+                <p class="text-gray-600 mb-4">Lead Designer</p>
+                <p class="text-gray-500">Specializes in modern furniture design and sustainable practices.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 text-center">
+                <img src="t22.jpg" alt="Team Member 2" class="w-1/2 h-48 object-cover rounded mb-2 mx-auto">
+                <h3 class="text-lg font-semibold">John Doe</h3>
+                <p class="text-gray-600 mb-4">Senior Designer</p>
+                <p class="text-gray-500">Expert in wood craftsmanship and upholstery techniques.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 text-center">
+                <img src="t3.jpg" alt="Team Member 3" class="w-1/2 h-48 object-cover rounded mb-2 mx-auto">
+                <h3 class="text-lg font-semibold">Ekram Ahmed</h3>
+                <p class="text-gray-600 mb-4">Product Designer</p>
+                <p class="text-gray-500">Focuses on user experience and innovative design solutions.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto px-4 py-16 bg-gray-100">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center text-center p-4">
+                <i class="fas fa-shipping-fast text-red-600 text-4xl mb-2"></i>
+                <h3 class="text-lg font-semibold">Free Shipping</h3>
+                <p class="text-gray-600">On all orders over $100</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4">
+                <i class="fas fa-undo text-red-600 text-4xl mb-2"></i>
+                <h3 class="text-lg font-semibold">Free Return Policy</h3>
+                <p class="text-gray-600">Return money within 30 days</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4">
+                <i class="fas fa-lock text-red-600 text-4xl mb-2"></i>
+                <h3 class="text-lg font-semibold">Secure Shopping</h3>
+                <p class="text-gray-600">You're in safe hands</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4">
+                <i class="fas fa-box-open text-red-600 text-4xl mb-2"></i>
+                <h3 class="text-lg font-semibold">More Than 1000 Products</h3>
+                <p class="text-gray-600">We have everything you need</p>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto px-4 py-16 bg-white">
+        <h2 class="text-red-600 text-3xl font-semibold mb-2">WHAT BUYERS SAY</h2>
+        <p class="text-gray-600 text-2xl mb-8">Latest Buyers Reviews</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg border border-gray-300 p-4 text-center">
+                <img src="site.jpg" alt="Person 1" class="w-20 h-20 object-cover rounded-full mx-auto mb-2">
+                <div class="flex justify-center mb-2">
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                </div>
+                <h3 class="text-lg font-semibold">Michael Brown</h3>
+                <p class="text-gray-600">"The quality of the furniture is amazing! I love my new sofa!"</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg border border-gray-300 p-4 text-center">
+                <img src="lee.jpg" alt="Person 2" class="w-20 h-20 object-cover rounded-full mx-auto mb-2">
+                <div class="flex justify-center mb-2">
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-gray-400"></i>
+                </div>
+                <h3 class="text-lg font-semibold">Sarah Lee</h3>
+                <p class="text-gray-600">"Excellent customer service and beautiful designs!"</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg border border-gray-300 p-4 text-center">
+                <img src="eb.jpg" alt="Person 3" class="w-20 h-20 object-cover rounded-full mx-auto mb-2">
+                <div class="flex justify-center mb-2">
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                    <i class="fas fa-star text-red-500"></i>
+                </div>
+                <h3 class="text-lg font-semibold">David Johnson</h3>
+                <p class="text-gray-600">"I can't believe how fast the delivery was. Highly recommend!"</p>
+            </div>
+        </div>
+    </section>
+    <hr class="my-8 border-gray-300"> <!-- Horizontal line -->
+    <section class="container mx-auto px-4 py-16 bg-gray-100 flex justify-between items-center">
+        <div class="w-1/2 text-left">
+            <h3 class="text-lg font-semibold">Hours:</h3>
+            <p class="text-gray-600">9:30am - 6:30pm Monday to Friday</p>
+        </div>
+        <div class="w-1/2 text-right">
+            <h3 class="text-lg font-semibold">Shopping App:</h3>
+            <p class="text-gray-600">Try our View in Your Room feature, manage registries, and save payment info.</p>
+        </div>
+    </section>
+    <div class="container mx-auto px-4 py-16">
+        <div class="map bg-white shadow-lg rounded-lg overflow-hidden">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5428137758854!2d38.78723389999999!3d9.01414640000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b9b74c018c515%3A0xd9c6129da7048a86!2sKURAZTECH!5e0!3m2!1sen!2set!4v1694422890572!5m2!1sen!2set"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer class="bg-gray-800 text-white text-center relative">
+        <div class="container mx-auto flex justify-between px-4 py-8">
+            <div class="w-1/4">
+                <img src="logo.png" alt="Addis Living" class="mb-4 w-32 mx-auto">
+                <p class="text-sm">© 2024 Addis Living. All rights reserved.</p>
+            </div>
+            <div class="w-1/4">
+                <h3 class="text-lg font-bold mb-2">Products</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Sofas</a></li>
+                    <li><a href="#" class="hover:underline">Chairs</a></li>
+                    <li><a href="#" class="hover:underline">Tables</a></li>
+                    <li><a href="#" class="hover:underline">Lighting</a></li>
+                    <li><a href="#" class="hover:underline">Decor</a></li>
+                </ul>
+            </div>
+            <div class="w-1/4">
+                <h3 class="text-lg font-bold mb-2">Links</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Gallery</a></li>
+                    <li><a href="#" class="hover:underline">Blog</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="w-1/4">
+                <h3 class="text-lg font-bold mb-2">Contact</h3>
+                <p>Email: <a href="mailto:contact@addisliving.com" class="hover:underline">contact@addisliving.com</a>
+                </p>
+                <p>Phone: (123) 456-7890</p>
+                <div class="flex justify-center space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-700 text-sm py-4 mt-8">
+            <div class="container mx-auto flex justify-between px-4">
+                <p class="text-left">Copyright © 2024. All Rights Reserved</p>
+                <div class="text-right space-x-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms and Conditions</a>
+                    <a href="#" class="hover:underline">Refund and Returns Policy</a>
+                </div>
+            </div>
+            <a href="#"
+                class="absolute bottom-20 right-5 bg-red-500 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-red-600 transition duration-200">
+                ↑
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
